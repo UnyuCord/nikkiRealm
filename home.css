@@ -1,19 +1,6 @@
-@font-face {
-    font-family: 'Deltarune';
-    src: url("/fonts/deltarune.otf");
-}
-
-body {
-    background-image: url("/images/index-background.gif");
-    background-color: white;
-    color: white;
-    font-family: 'Deltarune', serif;
-    font-size: medium;
-}
-
 .chain-border {
     border-style: solid;
-    border-image: url(images/chain-border.png) 3 round;
+    border-image: url(resources/chain-border.png) 3 round;
 }
 
 a:link {
@@ -66,7 +53,8 @@ a:visited {
     align-content: center;
     text-align: center;
     font-size: 20px;
-    
+    padding-top: 1vw;
+    padding-bottom: 1vw;
 }
 
 #main-content {

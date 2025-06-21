@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Deltarune';
+    src: url("/fonts/deltarune.otf");
+}
+
+body {
+    color: white;
+    font-family: 'Deltarune', serif;
+    font-size: medium;
+}

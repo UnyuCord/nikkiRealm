@@ -5,8 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NIKKIREALM</title>
         <link href="/index.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     </head>
+    <script>
+        function poof() {
+            const audio = new Audio('/resources/poof.wav')
+            const element = document.getElementById('start-no');
+            element.style.opacity = 0;
+            element.onclick = null;
+            audio.play();
+            
+        }
+    </script>
     <body>
-        WIP
+        <video autoplay muted loop>
+            <source src="/resources/contactloop.mp4">
+        </video>
+        <div>
+            <h1 id="start-warning">
+                WARNING!
+            </h1>
+            <h2 id="start-stupid">
+                THIS SITE CONTAINS CONTENT THAT SOME USERS MAY CONSIDER <span>STUPID</span>
+            </h2>
+            <h2 id="start-continue">CONTINUE?</h2>
+            <div id="start-yesno">
+                <a onclick="" id="start-yes">YES</a>
+                <a onclick="poof()" id="start-no">NO</a>
+            </div>
+        </div>
     </body>
 </html>
