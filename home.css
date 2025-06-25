@@ -1,3 +1,9 @@
+body {
+    opacity: 0;
+    animation: fade-in 2s forwards;
+    background-image: url("/resources/index-background.gif");
+}
+
 .chain-border {
     border-style: solid;
     border-image: url(resources/chain-border.png) 3 round;
@@ -27,7 +33,7 @@ a:visited {
 }
 
 #main-container {
-    margin: 10rem;
+    margin: 8rem;
     display: flexbox;
 }
 

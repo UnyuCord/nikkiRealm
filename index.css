@@ -1,4 +1,4 @@
-body {
+body, button {
     text-align: center;
     text-shadow:
         -3px -3px 0 #878794,
@@ -24,6 +24,15 @@ h2>span {
         0 0 15px red,
         0 0 20px darkred,
         0 0 30px darkred;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    font-size: 80px;
+    font-family: 'Deltarune', serif;
+    border: none;
+    background: none;
 }
 
 #start-warning {
@@ -63,10 +72,4 @@ video {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
-
-@keyframes fade-in {  
-    to {
-        opacity: 1;
-    }
 }

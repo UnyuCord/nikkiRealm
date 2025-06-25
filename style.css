@@ -8,3 +8,9 @@ body {
     font-family: 'Deltarune', serif;
     font-size: medium;
 }
+
+@keyframes fade-in { 
+    to {
+        opacity: 1;
+    }
+}
