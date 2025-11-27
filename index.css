@@ -1,10 +1,16 @@
 body, button {
-    text-align: center;
     text-shadow:
         -3px -3px 0 #878794,
         3px -3px 0 #878794,
         -3px 3px 0 #878794,
         3px 3px 0 #878794;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: initial;
+    text-align: center;
 }
 
 h1 {
@@ -54,16 +60,13 @@ button {
 }
 
 #start-yesno {
+    font-size: 0;
     opacity: 0;
     margin-top: 1em;
-    font-size: 90px;
-    position: relative;
     animation: fade-in 2s ease-in-out forwards;
     animation-delay: 6s;
-}
-
-#start-yes {
-    margin-right: 20%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 video {
