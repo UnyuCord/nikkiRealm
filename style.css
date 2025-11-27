@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Deltarune';
-    src: url("/fonts/deltarune.otf");
+    src: url("./fonts/deltarune.otf");
 }
 
 body {

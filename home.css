@@ -1,7 +1,7 @@
 body {
     opacity: 0;
     animation: fade-in 2s forwards;
-    background-image: url("/resources/index-background.gif");
+    background-image: url("./resources/index-background.gif");
 }
 
 .chain-border {
@@ -65,7 +65,7 @@ a:visited {
 
 #main-content {
     width: 90%;
-    border-left: 0px;
+    border-left: 0;
     padding: 1vw;
     font-size: 16px;
 }

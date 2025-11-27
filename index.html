@@ -4,22 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NIKKIREALM</title>
-        <link href="/index.css" rel="stylesheet" type="text/css" media="all">
-        <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./index.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <script>
         function poof() {
-            const audio = new Audio('/resources/poof.wav');
+            const audio = new Audio('./resources/poof.wav');
             const element = document.getElementById('start-no');
-            element.style.opacity = 0;
+            element.style.opacity = '0';
             element.onclick = null;
             audio.play();
-            
         }
     </script>
     <body>
         <video autoplay muted loop>
-            <source src="/resources/contactloop.mp4">
+            <source src="./resources/contactloop.mp4">
         </video>
         <div>
             <h1 id="start-warning">
@@ -30,7 +29,7 @@
             </h2>
             <h2 id="start-continue">CONTINUE?</h2>
             <div id="start-yesno">
-                <button onclick="location.href = '/home.html'" id="start-yes">YES</button>
+                <button onclick="location.href = './home.html'" id="start-yes">YES</button>
                 <button onclick="poof()" id="start-no">NO</button>
             </div>
         </div>
