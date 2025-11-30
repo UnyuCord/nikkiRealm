@@ -10,19 +10,26 @@ body {
     border-image: url(resources/chain-border.png) 3 round;
 }
 
+h1>span {
+    font-size: 1em;
+    transition: font-size 0.2s ease-in;
+}
+
+h1>span:hover {
+    font-size: 1.5em;
+    transition: font-size 0.2s ease-in;
+}
+
+#top-title {
+    width: 40%
+}
+
 a:link {
     color: yellow;
 }
 
 a:visited {
     color: wheat;
-}
-
-#cloud-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
 }
 
 #top-cover {
@@ -35,10 +42,18 @@ a:visited {
     color: yellow;
 }
 
+
+#moon-wrapper {
+    width: 20%;
+}
+
 #top-moon {
     height: 10em;
     margin-right: 1em;
     animation: rotation 300s infinite linear;
+    pointer-events: none;
+    user-select: none;
+
 }
 
 #main-container {
