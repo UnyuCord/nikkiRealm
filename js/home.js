@@ -1,3 +1,7 @@
+'use strict';
+
+window.onload = getAge;
+
 let currentClouds = 0;
 const numberOfMaximumClouds = 5;
 
@@ -29,6 +33,11 @@ function createCloud() {
     currentClouds++;
 
     cloudContainer.appendChild(imageNode);
+}
+
+function getAge() {
+    const birthday = new Date("2004-05-12");
+    document.getElementById('age').innerHTML = ((new Date().getFullYear() - birthday.getFullYear())).toString();
 }
 
 function getRandomNumberInRange(min, max) {
